@@ -1,34 +1,35 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Musik landing</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="fontawesome/css/all.css">
 </head>
 <body>
-    <main>
+    <!-- <main>
         <nav class="mainmenu">
             <div class="profile">
                 <img src="img/pp-2.jpg" alt="">
-                <p>AMBATUKAM S.HITAM</p>
+                <p>TI T NYA TULUS</p>
             </div>
         </nav>
-    </main>
+    </main> -->
     <div class="music-player">
         <div class="album-cover">
             <img src="img/cover.jpg" id="rotatingimage">
-          <h1>Haruka</h1>
-          <p>yaosobi</p>
-          <audio controls id="song ">
-            <source src="audio/Y2meta.app - YOASOBI「ハルカ」.mp3" type="audio/mpeg">
-          </audio>
+            <h1>Haruka</h1>
+            <p>yaosobi</p>
+            <audio id="song">
+                <source src="audio/Y2meta.app - YOASOBI「ハルカ」.mp3" type="audio/mp3">
+            </audio>
             <input type="range" value="0" id="progress">
             <div class="controls">
-            <div ><i class="fa-solid fa-backward"></i></div>
-             <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlicon"></i></div>
-             <div><i class="fa-solid fa-forward"></i></div>
+                <div><i class="fas fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fas fa-play" id="ctrlicon"></i></div>
+                <div><i class="fas fa-forward"></i></div>
             </div>
         </div>
     </div>
