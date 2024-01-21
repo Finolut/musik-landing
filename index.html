@@ -9,27 +9,20 @@
     <link rel="stylesheet" href="fontawesome/css/all.css">
 </head>
 <body>
-    <!-- <main>
-        <nav class="mainmenu">
-            <div class="profile">
-                <img src="img/pp-2.jpg" alt="">
-                <p>TI T NYA TULUS</p>
-            </div>
-        </nav>
-    </main> -->
     <div class="music-player">
         <div class="album-cover">
-            <img src="img/cover.jpg" id="rotatingimage">
-            <h1>Haruka</h1>
-            <p>yaosobi</p>
+            <img src="" id="rotatingImage" alt="Rotating Image">
+            <h1 id="song-title"></h1>
+            <p id="artist"></p>
             <audio id="song">
-                <source src="audio/Y2meta.app - YOASOBI「ハルカ」.mp3" type="audio/mp3">
+                <!-- Initial source, will be dynamically updated -->
+                <source src="" type="audio/mp3">
             </audio>
             <input type="range" value="0" id="progress">
             <div class="controls">
-                <div><i class="fas fa-backward"></i></div>
+                <div onclick="previousSong()"><i class="fas fa-backward"></i></div>
                 <div onclick="playPause()"><i class="fas fa-play" id="ctrlicon"></i></div>
-                <div><i class="fas fa-forward"></i></div>
+                <div onclick="nextSong()"><i class="fas fa-forward"></i></div>
             </div>
         </div>
     </div>
