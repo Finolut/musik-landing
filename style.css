@@ -73,7 +73,6 @@ body {
 }
 
 #progress {
-    -webkit-appearance: none;
     width: 100%;
     height: 6px;
     background: #5f40e6;

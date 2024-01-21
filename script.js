@@ -1,20 +1,23 @@
 let progress = document.getElementById("progress");
 let song = document.getElementById("song");
-let ctricon = document.getElementById("ctricon");
+let ctrlIcon = document.getElementById("ctrlIcon");
 
 song.onloadedmetadata = function() {
-    progress.max = song.duration; // corrected line
+    progress.max = song.duration; // correcte d line
     progress.value = song.currentTime;
 }
 
 function playPause() {
-    if(ctricon.classList.contains("fa-pause")) {
-        song.pause();
-        ctricon.classList.remove("fa-pause");
-        ctricon.classList.add("fa-play");
-    } else {
-        song.play();
-        ctricon.classList.add("fa-pause");
-        ctricon.classList.remove("fa-play");
+    console.log('Play/Pause button clicked');
+        if(ctrlIcon.classList.contains("fa-pause")) {
+            song.pause();
+            ctrlIcon.classList.remove("fa-pause");
+            ctrlIcon.classList.add("fa-play");
+        } 
+        else {
+            song.play();
+            ctrlIcon.classList.add("fa-pause");
+            ctrlIcon.classList.remove("fa-play");
+        }
     }
-}
+  
